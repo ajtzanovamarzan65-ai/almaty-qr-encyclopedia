@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алматы облысындағы киелі жерлердің QR-энциклопедиясы</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-emerald-800 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-3 mb-2 md:mb-0">
+                <i class="fa-solid fa-qrcode text-3xl text-amber-400"></i>
+                <div>
+                    <h1 class="text-xl font-bold">Алматы облысының киелі жерлері</h1>
+                    <p class="text-xs text-emerald-200">QR-энциклопедиясы | «Зерде» жобасы</p>
+                </div>
+            </div>
+            <nav class="flex flex-wrap justify-center gap-2 text-sm font-medium">
+                <button onclick="switchTab('home')" class="nav-btn px-3 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-600 transition">Басты бет</button>
+                <button onclick="switchTab('places')" class="nav-btn px-3 py-1.5 rounded-lg hover:bg-emerald-700 transition">Киелі орындар</button>
+                <button onclick="switchTab('about')" class="nav-btn px-3 py-1.5 rounded-lg hover:bg-emerald-700 transition">Жоба туралы</button>
+                <button onclick="switchTab('protection')" class="nav-btn px-3 py-1.5 rounded-lg hover:bg-emerald-700 transition">Мұраны қорғау</button>
+                <button onclick="switchTab('diary')" class="nav-btn px-3 py-1.5 rounded-lg hover:bg-emerald-700 transition">Күнделік & Дереккөздер</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 py-8">
+        <!-- Home Tab -->
+        <section id="home" class="tab-content space-y-6">
+            <div class="bg-gradient-to-r from-emerald-700 to-teal-800 text-white rounded-2xl p-8 shadow-lg">
+                <span class="bg-amber-400 text-emerald-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Ғылыми жоба</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-3 mb-4">Алматы облысындағы киелі жерлердің QR-энциклопедиясы</h2>
+                <p class="text-emerald-100 text-lg max-w-3xl leading-relaxed">
+                    Өңірдің тарихи-мәдени мұрасын жас ұрпаққа таныстырудың заманауи әрі қолжетімді цифрлық тәсілі. Смартфон арқылы QR-кодты сканерлеп, қажетті ақпаратты бір секундта алыңыз!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="bg-emerald-100 text-emerald-700 p-3 rounded-lg"><i class="fa-solid fa-bolt text-xl"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-1">Жылдам қолжетімділік</h3>
+                        <p class="text-slate-600 text-sm">QR-код көмегімен қажетті тарихи нысан туралы мәліметті кез келген жерде бірден ашу.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="bg-emerald-100 text-emerald-700 p-3 rounded-lg"><i class="fa-solid fa-book-open text-xl"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-1">Сенімді деректер</h3>
+                        <p class="text-slate-600 text-sm">Ресми мемлекеттік тізімдер мен ғылыми археологиялық зерттеулерге негізделген.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="bg-emerald-100 text-emerald-700 p-3 rounded-lg"><i class="fa-solid fa-mobile-screen text-xl"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-1">Ыңғайлы формат</h3>
+                        <p class="text-slate-600 text-sm">Барлық смартфондар мен компьютерлерде мінсіз жұмыс істейтін заманауи веб-сайт.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-100">
+                <h3 class="text-2xl font-bold text-emerald-900 mb-4">Аннотация</h3>
+                <p class="text-slate-700 leading-relaxed">
+                    Бұл ғылыми жобада Алматы облысындағы тарихи-мәдени және рухани маңызы бар киелі орындарды зерттеу, олар туралы ақпаратты жүйелеу және QR-код технологиясы негізінде электрондық энциклопедия жасау мәселесі қарастырылады. Жобаның мақсаты – өңірдің тарихи мұрасын жас ұрпаққа таныстырудың заманауи әрі қолжетімді тәсілін әзірлеу.
+                </p>
+            </div>
+        </section>
+
+        <!-- Places Tab -->
+        <section id="places" class="tab-content hidden space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-6">
+                <h2 class="text-2xl font-bold text-emerald-900">Зерттелген киелі орындар тізімі</h2>
+                <div class="w-full md:w-72 relative">
+                    <input type="text" id="searchInput" placeholder="Іздеу (мысалы: Таңбалы)..." onkeyup="filterPlaces()" class="w-full pl-10 pr-4 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                    <i class="fa-solid fa-search absolute left-3 top-3 text-slate-400"></i>
+                </div>
+            </div>
+
+            <div id="placesGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Place 1 -->
+                <div class="place-card bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col justify-between" data-title="Таңбалы қорық-музейі Жамбыл ауданы петроглифтер">
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2.5 py-1 rounded">Жамбыл ауданы</span>
+                        <h3 class="text-xl font-bold text-slate-900">Таңбалы қорық-музейі</h3>
+                        <p class="text-slate-600 text-sm line-clamp-3">Петроглифтер қола дәуірінің екінші жартысынан б.з. XX ғасырының басына дейінгі кезеңдерді қамтиды. ЮНЕСКО тізімінде.</p>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openModal(1)" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded-lg transition text-sm flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-eye"></i><span>Толығырақ көру</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Place 2 -->
+                <div class="place-card bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col justify-between" data-title="Тамғалы тас Іле өзені Қонаев буддалық бейнелер">
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2.5 py-1 rounded">Қонаев қ. маңы</span>
+                        <h3 class="text-xl font-bold text-slate-900">Тамғалы тас</h3>
+                        <p class="text-slate-600 text-sm line-clamp-3">Іле өзені маңындағы жартастарда буддалық бейнелер мен жазулар сақталған археологиялық кешен.</p>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openModal(2)" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded-lg transition text-sm flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-eye"></i><span>Толығырақ көру</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Place 3 -->
+                <div class="place-card bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col justify-between" data-title="Талғар қалашығы Талхир ортағасырлық">
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2.5 py-1 rounded">Талғар қаласы</span>
+                        <h3 class="text-xl font-bold text-slate-900">Талғар (Талхир) қалашығы</h3>
+                        <p class="text-slate-600 text-sm line-clamp-3">Ортағасырлық қала мәдениеті мен Ұлы Жібек жолы бойындағы байланыстарды танытатын археологиялық ескерткіш.</p>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openModal(3)" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded-lg transition text-sm flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-eye"></i><span>Толығырақ көру</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Place 4 -->
+                <div class="place-card bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col justify-between" data-title="Бесшатыр қорғандары Сақ дәуірі Алтынемел">
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2.5 py-1 rounded">Жетісу облысы</span>
+                        <h3 class="text-xl font-bold text-slate-900">Бесшатыр қорымы</h3>
+                        <p class="text-slate-600 text-sm line-clamp-3">Сақ дәуірінің ерте темір кезеңіне жататын жерлеу-ғұрыптық ескерткіштерімен байланысты тарихи кешен.</p>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openModal(4)" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded-lg transition text-sm flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-eye"></i><span>Толығырақ көру</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Place 5 -->
+                <div class="place-card bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col justify-between" data-title="Боралдай обалары сақ үйсін Алматы">
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2.5 py-1 rounded">Алматы маңы</span>
+                        <h3 class="text-xl font-bold text-slate-900">Боралдай обалары</h3>
+                        <p class="text-slate-600 text-sm line-clamp-3">Ежелгі көшпелілер мәдениетімен байланысты археологиялық ескерткіштер тобы, сақ және үйсін кезеңдері.</p>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openModal(5)" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded-lg transition text-sm flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-eye"></i><span>Толығырақ көру</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Place 6 -->
+                <div class="place-card bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 flex flex-col justify-between" data-title="Жамбыл Жабаевтың музейі әдеби мемориал Жамбыл ауылы">
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2.5 py-1 rounded">Жамбыл ауылы</span>
+                        <h3 class="text-xl font-bold text-slate-900">Жамбыл Жабаевтың музейі</h3>
+                        <p class="text-slate-600 text-sm line-clamp-3">Ұлы ақынның өмірі мен шығармашылығына арналған әдеби-мемориалдық музей (1947 ж. ашылған).</p>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openModal(6)" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded-lg transition text-sm flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-eye"></i><span>Толығырақ көру</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Tab -->
+        <section id="about" class="tab-content hidden space-y-6">
+            <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-100 space-y-6">
+                <h2 class="text-2xl font-bold text-emerald-900">Жобаның теориялық және практикалық негіздері</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-semibold text-emerald-800 flex items-center space-x-2">
+                            <i class="fa-solid fa-code text-amber-500"></i><span>QR-код технологиясы</span>
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            QR-код – ақпаратты екі өлшемді графикалық белгі түрінде сақтауға және смартфон арқылы жылдам оқуға мүмкіндік беретін заманауи технология. Ол баспа материалдарын (буклет, постер) цифрлық мазмұнмен байланыстырады.
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-semibold text-emerald-800 flex items-center space-x-2">
+                            <i class="fa-solid fa-check-to-slot text-amber-500"></i><span>Практикалық нәтижелер</span>
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Жоба барысында Алматы облысының басты киелі орындары іріктеліп, ресми дереккөздер мен ғылыми материалдар негізінде жүйеленді. Әр нысанға жеке электрондық парақша мен QR-код әзірленді.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Protection Tab -->
+        <section id="protection" class="tab-content hidden space-y-6">
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-8 space-y-4">
+                <div class="flex items-center space-x-3 text-amber-800">
+                    <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
+                    <h2 class="text-2xl font-bold">Тарихи мұраны қорғайық!</h2>
+                </div>
+                <p class="text-slate-700 leading-relaxed">
+                    Тарихи және мәдени ескерткіштер – ұлттың рухани байлығы. Оларға зиян келтірмеу, сақтау және келешек ұрпаққа жеткізу – әрбір азаматтың қасиетті борышы.
+                </p>
+                <ul class="space-y-2 text-slate-700">
+                    <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-600"></i><span>Жартастарға, қабырғаларға жазу жазбаңыз және суреттерге тимеңіз.</span></li>
+                    <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-600"></i><span>Белгіленген туристік маршруттар мен соқпақтардан шықпаңыз.</span></li>
+                    <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-600"></i><span>Табиғи және археологиялық ортаға қоқыс қалдырмаңыз.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Diary & References Tab -->
+        <section id="diary" class="tab-content hidden space-y-6">
+            <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-100 space-y-6">
+                <h2 class="text-2xl font-bold text-emerald-900">Пайдаланылған әдебиеттер мен дереккөздер</h2>
+                <ul class="list-disc list-inside space-y-2 text-slate-700 text-sm">
+                    <li>Қазақстан Республикасының «Тарихи-мәдени мұра объектілерін қорғау және пайдалану туралы» Заңы.</li>
+                    <li>Қазақстанның киелі жерлері. Қазақстанның ұлттық туристік порталы (kazakhstan.travel).</li>
+                    <li>Ә.Х. Марғұлан атындағы Археология институтының материалдары (archaeology.kz).</li>
+                    <li>Алматы облысы әкімдігінің ресми ақпараттық ресурстары.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="placeModal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full p-6 md:p-8 space-y-6 relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-xl font-bold"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modalContent" class="space-y-4">
+                <!-- Dynamic Content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 mt-12 text-center text-sm">
+        <p>«Алматы облысындағы киелі жерлердің QR-энциклопедиясы» ғылыми жобасы © 2026-2027</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const placesData = {
+            1: {
+                title: "Таңбалы қорық-музейі",
+                location: "Жамбыл ауданы, Алматы облысы",
+                period: "Қола дәуірінен б.з. XX ғасырының басына дейін",
+                desc: "Таңбалы археологиялық ландшафтында жартасқа қашалған суреттер, қоныстар мен жерлеу орындары сақталған. Петроглифтер ежелгі қауымдардың дүниетанымы мен тұрмысын зерттеуге мүмкіндік береді.",
+                significance: "ЮНЕСКО-ның Дүниежүзілік мұра тізіміне енгізілген аса маңызды тарихи-мәдени нысан.",
+                mapUrl: "https://whc.unesco.org/en/list/1145/maps/",
+                warning: "Жартасқа жазу жазбаңыз, суреттерге тимеңіз, қоқыс қалдырмаңыз."
+            },
+            2: {
+                title: "Тамғалы тас",
+                location: "Іле өзенінің шатқалы, Қонаев қаласы маңы",
+                period: "Орта ғасырлар / көне кезең",
+                desc: "Іле өзені маңындағы жартастарда буддалық бейнелер мен көне жазулар сақталған.",
+                significance: "Өңірдің мәдени байланыстары мен жартас өнерін таныстыратын бірегей кешен.",
+                mapUrl: "https://kazakhstan.travel/kz/attractions/57",
+                warning: "Жартас бетіне белгі салмаңыз, табиғатты қорғаңыз."
+            },
+            3: {
+                title: "Талғар (Талхир) қалашығы",
+                location: "Талғар қаласының оңтүстік шеті",
+                period: "Орта ғасырлар (XII-XIII ғасырлар)",
+                desc: "Ортағасырлық Талхир қаласының орны. Қазба деректері тұрғын үйлерді, қолөнер мен сауда байланыстарын көрсетеді.",
+                significance: "Ұлы Жібек жолы бойындағы қала мәдениетін зерттеуге арналған маңызды археологиялық нысан.",
+                mapUrl: "https://archaeology.kz/heritages/65-talgar-talhir-qalasy",
+                warning: "Қалашық қабырғалары мен қабаттарына зиян келтірмеңіз."
+            },
+            4: {
+                title: "Бесшатыр қорымы",
+                location: "«Алтынемел» ұлттық паркі, Жетісу облысы",
+                period: "Сақ дәуірі, ерте темір кезеңі",
+                desc: "Іле өзенінің оң жағалауындағы сақ қорғандары кешені; обаларды тас бағандар қоршайды.",
+                significance: "Сақ қоғамының жерлеу дәстүрі мен сәулет өнері туралы құнды мәлімет береді.",
+                mapUrl: "https://arc
